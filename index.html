@@ -25,11 +25,42 @@
       <!-- Main Part - Rolagem -->
        <main>
         <div id="main-header">
+
           <h2>Crie seu Convite!</h2>
           <div id="about">
             <img src="./assets/icons/calendar.svg" alt="">
             <span>Sobre o Evento</span>
           </div>
+            <!-- Começo dos Inputs -->
+          <form method="post" enctype="multipart/form-data">
+
+              <!-- First Info - Sobre -->
+               <fieldset id="about-info">
+                <!-- event name -->
+                <div id="event-name">
+                  <label for="eventname">Título</label>
+                  <input id="eventname" name="eventname" type="text" placeholder="Nome do Evento">
+                </div>
+
+                <!-- start & end -->
+                 <div id="star-end" class="flex">
+                  <!-- start -->
+                  <div id="start" class="flex-2">
+                    <label for="start">Início</label>
+                    <input type="datetime-local" id="start" name="start">
+                  </div>
+                  <!-- end -->
+                   <div id="end" class="flex-1">
+                    <label for="end">Fim</label>
+                    <input type="datetime-local" id="end" name="end">
+                   </div>
+
+                 </div>
+
+               </fieldset>
+
+             </form>
+    
         </div>
        </main>
     </div>

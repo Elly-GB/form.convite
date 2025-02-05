@@ -10,4 +10,9 @@ main {
   overflow: auto; 
   margin: 1.25rem;
   padding: 5rem 8.125rem 5rem;
+  border-radius: 0.75rem;
+  h2 {
+    font: var(--h-md);
+    margin-bottom: 2.5rem;
+  }
 }

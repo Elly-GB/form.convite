@@ -15,4 +15,18 @@ main {
     font: var(--h-md);
     margin-bottom: 2.5rem;
   }
+
+  #about {
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.75rem;
+  }
+  span {
+    font: var(--h-sm);
+  }
 }

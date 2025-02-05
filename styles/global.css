@@ -47,3 +47,9 @@
   --b-sm: 400 .875rem var(--font-family-open);
   --b-md: 400 .75rem var(--font-family-open);
 }
+
+body {
+  overflow: hidden;
+  font: var(--b-sm);
+  color: var(--text-heading);
+}

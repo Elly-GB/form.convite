@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors text */
+  --text-body:#C8CDD0;
+  --text-heading:#F9F9F9;
+  /* input */
+  --input-base:#1C1F21;
+  --input-stroke:#363B40;
+  --input-placeholder:#869198;
+  /* colors shape */
+  --shape-background:#131516;
+  --shape-body:#212427;
+  --shape-button:#2D3136;
+  --shape-hover:#383D42;
+  /* colors blue */
+  --brand-dark:#1D6FB6;
+  --brand-mid:#3487CF;
+  --brand-light:#59B2FF;
+  /* colors rainbow */
+  --navy:#6A59FF;
+  --purple:#B259FF;
+  --fuschia:#FF59F9;
+  --pink:#FF598B;
+  --orange:#FF8B59;
+  --yellow:#FFCD59;
+  --lime:#E1FF59;
+  --green:#59FF91;
+  --cyan:#59FFF9;
+  /* color error */
+  --danger: #FF5959;
+  /* fonts */
+  --font-family-lecker: "Leckerli One", serif;
+  --font-family-baloo: "Baloo 2", serif;
+  --font-family-open: "Open Sans", serif;
+  /* lecker */
+  --logo: 400 2.5rem var(--font-family-lecker);
+  /* baloo */
+  --h-md: 700 1.75rem var(--font-family-baloo);
+  --h-sm: 700 1.125rem var(--font-family-baloo);
+  /* open */
+  --b-md: 400 1rem var(--font-family-open);
+  --b-sm: 400 .875rem var(--font-family-open);
+  --b-md: 400 .75rem var(--font-family-open);
+}

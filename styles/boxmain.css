@@ -1,0 +1,12 @@
+#box {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  border: 1px solid red;
+  overflow: auto; 
+  margin: 5rem 8.125rem 5rem;
+}

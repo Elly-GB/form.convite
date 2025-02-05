@@ -6,7 +6,8 @@
 }
 
 main {
-  border: 1px solid red;
+  background-color: var(--shape-body);
   overflow: auto; 
-  margin: 5rem 8.125rem 5rem;
+  margin: 1.25rem;
+  padding: 5rem 8.125rem 5rem;
 }

@@ -1,8 +1,7 @@
 aside {
   margin: 1.25rem;
   background-image: url(../assets/Background.jpg);
-  max-width: 25rem;
-  height: 45.5rem;
+  background-size: cover;
   border-radius: 0.75rem;
   & img {
     max-width: 2.865rem;

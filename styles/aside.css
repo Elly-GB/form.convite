@@ -1,0 +1,22 @@
+aside {
+  margin: 1.25rem;
+  background-image: url(../assets/Background.jpg);
+  max-width: 25rem;
+  height: 45.5rem;
+  border-radius: 0.75rem;
+  & img {
+    max-width: 2.865rem;
+    margin: 2rem 0 1rem 2rem;
+  }
+
+  & h1 {
+    margin: 0 0 0.25rem 2rem;
+    font: var(--logo);
+    color: var(--pink);
+  }
+
+  & p {
+    margin-left: 2rem;
+    font: 300 1rem var(--font-family-open);
+  }
+}

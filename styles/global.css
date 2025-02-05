@@ -38,18 +38,24 @@
   --font-family-baloo: "Baloo 2", serif;
   --font-family-open: "Open Sans", serif;
   /* lecker */
-  --logo: 400 2.5rem var(--font-family-lecker);
+   --logo: 400 2.5rem var(--font-family-lecker);  /*h1*/
   /* baloo */
-  --h-md: 700 1.75rem var(--font-family-baloo);
-  --h-sm: 700 1.125rem var(--font-family-baloo);
+  --h-md: 700 1.75rem var(--font-family-baloo); /*h2*/
+  --h-sm: 700 1.125rem var(--font-family-baloo); /*h3*/ 
   /* open */
-  --b-md: 400 1rem var(--font-family-open);
-  --b-sm: 400 .875rem var(--font-family-open);
-  --b-md: 400 .75rem var(--font-family-open);
+  --b-md: 400 1rem var(--font-family-open); /*p*/ 
+  --b-sm: 400 .875rem var(--font-family-open); /*p*/ 
+  --b-xs: 400 .75rem var(--font-family-open); /*little*/ 
 }
 
 body {
   overflow: hidden;
   font: var(--b-sm);
   color: var(--text-heading);
+  background-color: var(--shape-background);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

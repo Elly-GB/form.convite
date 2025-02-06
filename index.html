@@ -36,6 +36,7 @@
 
               <!-- First Info - Sobre -->
                <fieldset id="about-info">
+
                 <!-- event name -->
                 <div id="event-name">
                   <label for="eventname">Título</label>
@@ -43,12 +44,12 @@
                 </div>
  
                 <!-- start & end -->
-                 <div id="star-end" class="flex">
+                 <div id="start-end" class="flex">
                   <!-- start -->
-                  <div id="start" class="flex-2">
+                  <div id="start" class="flex-1">
                     <label for="start">Início</label>
                     <input type="datetime-local" id="start" name="start">
-                  </div>
+                  </div> 
                   <!-- end -->
                    <div id="end" class="flex-1">
                     <label for="end">Fim</label>
@@ -56,6 +57,39 @@
                    </div>
 
                  </div>
+
+                 <!-- type & place -->
+                  <div id="type-place" class="flex">
+                    <!-- type -->
+                     <div id="type" class="flex-1">
+                      <label for="type">Tipo</label>
+
+                      <!-- types . person & online -->
+                       <div class="type-wrapper">
+                        <!-- person -->
+                        <div class="type-inner">
+                          <input type="radio" name="type" value="person" id="person">
+                          <img src="./assets/icons/building-2.svg" alt="imagem prédio">
+                          <label for="person">Presencial</label>
+                        </div>
+
+                        <!-- online -->
+                        <div class="type-inner">
+                          <input type="radio" name="type" value="online" id="online">
+                          <img src="./assets/icons/video.svg" alt="iamgem câmera">
+                          <label for="online">Online</label>
+                        </div>
+
+                       </div>
+
+                     </div>
+
+                     <!-- place -->
+                      <div id="place" class="flex-1">
+                        <label for="place">Local</label>
+                        <input type="text" id="place" name="place" placeholder="Link ou Endereço">
+                      </div>
+                  </div>
 
                </fieldset>
 

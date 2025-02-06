@@ -2,10 +2,31 @@
   display: flex;
 }
 
+/*  normal  */
 .flex-1 {
   flex: 1;
 }
 
+/*  menor que o normal */
 .flex-2 {
   flex: 2;
+}
+
+/* types  */
+.type-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+}
+
+.type-inner {
+  display: grid;
+  justify-items: center;
+
+  position: relative;
+  & input,
+  & input:focus {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
 }

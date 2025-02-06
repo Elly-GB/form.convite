@@ -1,18 +1,56 @@
 fieldset {
   border: none;
-  margin: 24px 0px 48px;
+  margin: 1.5rem 0rem 3rem;
   display: grid;
 }
 
-#event-name {
-  label {
-    display: block;
-    font: var(--b-sm);
-    color: var(--text-body);
-    margin-bottom: 0.75rem;
+/* nome de cima */
+
+label {
+  display: block;
+  font: var(--b-sm);
+  color: var(--text-body);
+  margin-bottom: 0.75rem;
+}
+
+/*  nome de dentro e caixa */
+
+input  {
+  padding: 0.8125rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--input-base);
+  border: 0.0625rem solid var(--input-stroke);
+  height: 3rem;
+  width: 100%;
+  margin-bottom: 1rem;
+
+  font: var(--b-md);
+  color: var(--input-placeholder);
+}
+
+input:focus {
+    border: 0.0625rem solid var(--brand-light);
   }
 
-  input {
-    padding: 13px 16px;
-  }
+input:focus {
+  box-shadow: 0 0 0 0 ;
+  outline: 0;
+}
+
+/* maiúscula */
+#start-end input {
+  text-transform: uppercase;
+}
+
+#start {
+  margin-right: 1rem;
+}
+
+/* calendário */
+
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+input[type="date"]::-webkit-input-placeholder{ 
+    visibility: hidden !important;
 }

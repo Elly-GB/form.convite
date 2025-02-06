@@ -21,12 +21,4 @@
 .type-inner {
   display: grid;
   justify-items: center;
-
-  position: relative;
-  & input,
-  & input:focus {
-    all: unset;
-    position: absolute;
-    inset: 0;
-  }
 }

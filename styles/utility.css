@@ -16,9 +16,20 @@
 .type-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  width: auto;
 }
 
 .type-inner {
   display: grid;
   justify-items: center;
+  width: 100%;
+
+  position: relative;
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
 }

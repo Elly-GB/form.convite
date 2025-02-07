@@ -28,10 +28,30 @@ input  {
   color: var(--input-placeholder);
 }
 
+textarea {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  height: 8.5rem;
+  width: 100%;
+  margin-bottom: 3rem;
+
+  font: var(--b-md);
+  color: var(--input-placeholder);
+}
+
 input:focus {
     border: 0.0625rem solid var(--brand-light);
   }
 
+
+
+textarea:focus {
+  border: 0.0625rem solid var(--brand-light);
+}
+
+textarea,
 input:focus {
   box-shadow: 0 0 0 0 ;
   outline: 0;
@@ -54,3 +74,5 @@ input::-webkit-calendar-picker-indicator {
 input[type="date"]::-webkit-input-placeholder{ 
     visibility: hidden !important;
 }
+
+/* textarea */

@@ -1,32 +1,12 @@
 
-#type-place { 
-  #tp {
-
-    background-color: var(--input-base);
-    border-radius: 8px;
-    border: 1px solid var(--input-stroke);
-    padding: 0.4688rem 1.125rem;
+input[type="radio"] {
+  display: none;
   }
 
-  #flex {
-    display: flex;
-    align-items: center;
 
-    svg {
-      width: 1rem;
-      height: 1rem; 
-    }
-
-    #chatos {
-
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    
-    }
-  }
+svg {
+  width: 100%;
 }
-
 
 
 

@@ -11,6 +11,21 @@
       font: var(--h-md);
     }
 
-    
+    & #about {
+      display: flex;
+      align-items: center;
+
+      gap: 12px;
+      margin: 40px 0px 24px;
+
+      & img {
+        width: 24px;
+        height: 24px;
+      }
+
+      & span {
+        font: var(--h-sm);
+      }
+    }
   }
 }

@@ -9,6 +9,7 @@
 
     & h2 {
       font: var(--h-md);
+      margin-bottom: 40px;
     }
 
     & #about {
@@ -16,7 +17,7 @@
       align-items: center;
 
       gap: 12px;
-      margin: 40px 0px 24px;
+      margin-bottom: 24px;
 
       & img {
         width: 24px;

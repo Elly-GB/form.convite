@@ -1,6 +1,49 @@
 fieldset#about {
+  display: flex;
+  flex-direction: column;
+
   border: none;
+
+  & #title {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  & #start-end {
+    flex-direction: row;
+  }
 }
 
+/* Input */
+.input {
+  & label {
+    font: var(--b-sm);
+    color: var(--text-body);
+  }
 
+  & input {
+    padding: 13px 16px;
+    margin-top: 12px;
+  
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: 8px;
+  
+    font: var(--b-md);
+    
+    &:focus,
+    &:hover {
+      border: 1px solid var(--brand-light);
+      outline: none;
+    }
+  }
 
+}
+
+/* Placeholder */
+input:hover::placeholder {
+  color: var(--text-heading);
+}
+input:focus::placeholder {
+  color: var(--text-heading);
+}

@@ -1,0 +1,36 @@
+#content {
+  display: grid;
+  grid-template-columns: 30% 70%;
+
+  height: 100vh;
+
+  & aside#aside-part {
+    margin: 20px 0px 20px 20px;
+
+    background-image: url(../assets/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    border-radius: 12px;
+
+    & img {
+      margin: 32px 0px 16px 32px;
+
+      width: 45.851px;
+      height: 48px;
+    }
+
+    & h1 {
+      margin-left: 32px;
+
+      font: var(--logo);
+      color: var(--pink);
+    }
+
+    & p {
+      margin: 4px 0px 0px 32px;
+
+      font: 300 16px var(--font-family-open);
+    }
+  }
+}

@@ -44,8 +44,8 @@
   --h-sm: 700 1.125rem var(--font-family-baloo); /*h3*/ 
   /* open */
   --b-md: 400 1rem var(--font-family-open); /*p*/ 
-  --b-sm: 400 .875rem var(--font-family-open); /*p*/ 
-  --b-xs: 400 .75rem var(--font-family-open); /*little*/ 
+  --b-sm: 400 0.875rem var(--font-family-open); /*p*/ 
+  --b-xs: 400 0.75rem var(--font-family-open); /*little*/ 
 }
 
 body {

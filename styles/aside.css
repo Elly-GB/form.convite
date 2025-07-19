@@ -5,7 +5,7 @@
   height: 100vh;
 
   & aside#aside-part {
-    margin: 20px 0px 20px 20px;
+    margin: 20px 6px 20px 20px;
 
     background-image: url(../assets/Background.jpg);
     background-repeat: no-repeat;

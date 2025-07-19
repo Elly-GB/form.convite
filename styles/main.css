@@ -1,6 +1,16 @@
 #content {
 
   & main#main-part {
+    margin: 20px;
+    padding: 80px 130px;
+
+    background-color: var(--shape-body);
+    border-radius: 12px;
+
+    & h2 {
+      font: var(--h-md);
+    }
+
     
   }
 }

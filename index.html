@@ -28,6 +28,39 @@
           <img src="./assets/icons/calendar.svg" alt="Ícone de calendário.">
           <span> Sobre o evento </span>
         </div>
+
+        <!-- Inputs -->
+        <form method="post" enctype="multipart/form-data">
+
+          <!-- FIRST - About -->
+          <fieldset id="about">
+
+            <!-- title -->
+            <div id="title">
+              <label for="title"> Título </label>
+              <input type="text" id="title" name="title" placeholder="Nome do evento">
+            </div>
+
+            <!-- start & end -->
+             <div id="start-end">
+                <!-- start -->
+                 <div id="start">
+                  <label for="start"> Início </label>
+                  <input type="datetime-local" id="start" name="start">
+                 </div>
+                <!-- end -->
+                 <div id="end">
+                  <label for="end"> Fim </label>
+                  <input type="datetime-local" id="end" name="end">
+                 </div>
+             </div>
+
+             <!-- type & place -->
+             <div id="type-place"></div>
+
+          </fieldset>
+          <!-- SECOND - -->
+        </form>
       </main>
     </div>
   </body>

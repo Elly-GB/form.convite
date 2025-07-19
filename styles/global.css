@@ -55,8 +55,3 @@ body {
   font: var(--b-sm);
   color: var(--text-heading);
 }
-
-img {
-  max-width: 100%;
-  height: auto;
-}

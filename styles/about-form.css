@@ -21,6 +21,34 @@ fieldset#about {
       width: 100%;
     }
   }
+
+  & #type-place {
+    flex-direction: row;
+    gap: 16px;
+
+    & #type {
+      margin-top: 16px;
+
+      font: var(--b-sm);
+      color: var(--text-body);
+  
+      & #options {
+        display: flex;
+        justify-content: space-between;
+        width: fit-content;
+
+        padding: 4px;
+        margin-top: 12px;
+
+        background-color: var(--input-base);
+        border: 1px solid var(--input-stroke);
+        border-radius: 8px;
+
+        font: var(--b-sm);
+        color: var(--text-body);
+      }
+    }
+  }
 }
 
 /* Input - Text */
@@ -89,3 +117,52 @@ input:focus::placeholder {
 input::-webkit-calendar-picker-indicator {
   opacity: 0;
 }
+
+/* Input - Radio */
+
+.radio {
+  display: flex;
+  align-items: center;
+  
+  padding: 10.5px 31px;
+  gap: 8px;
+
+  cursor: pointer;
+
+  & span.icon {
+          
+    & svg {
+      display: flex;
+      
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+}
+
+/* Selection */
+
+#options input[type="radio"] {
+  display: none;
+}
+
+.icon svg {
+  fill: #869198;
+}
+
+#person:checked + label,
+#online:checked + label {
+  background-color: var(--shape-button);
+  border-radius: 5px;
+
+  color: var(--text-heading);
+  font-weight: 600;
+}
+
+#person:checked + label .icon svg,
+#online:checked + label .icon svg {
+  fill: var(--brand-light)
+}
+
+

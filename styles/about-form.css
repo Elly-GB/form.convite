@@ -6,7 +6,6 @@ fieldset#about {
 
   & #title {
     width: 100%;
-    margin-bottom: 16px;
   }
 
   & #start-end {
@@ -26,19 +25,24 @@ fieldset#about {
     flex-direction: row;
     gap: 16px;
 
+    width: 100%;
+
     & #type {
       margin-top: 16px;
 
       font: var(--b-sm);
       color: var(--text-body);
+
+      width: 100%;
   
       & #options {
         display: flex;
         justify-content: space-between;
-        width: fit-content;
+        width: 100%;
 
         padding: 4px;
-        margin-top: 12px;
+        margin-top: 17px;
+
 
         background-color: var(--input-base);
         border: 1px solid var(--input-stroke);
@@ -47,6 +51,13 @@ fieldset#about {
         font: var(--b-sm);
         color: var(--text-body);
       }
+    }
+
+    & #place {
+      display: block;
+      margin-top: 16px;
+
+      width: 100%;
     }
   }
 }
@@ -123,8 +134,8 @@ input::-webkit-calendar-picker-indicator {
 .radio {
   display: flex;
   align-items: center;
-  
-  padding: 10.5px 31px;
+
+  padding-block: 10.5px ;
   gap: 8px;
 
   cursor: pointer;
@@ -141,6 +152,15 @@ input::-webkit-calendar-picker-indicator {
 
 }
 
+.presencial {
+  padding-inline: 2.5rem;
+  
+}
+
+.online {
+  padding-inline: 3rem;
+}
+
 /* Selection */
 
 #options input[type="radio"] {
@@ -150,6 +170,8 @@ input::-webkit-calendar-picker-indicator {
 .icon svg {
   fill: #869198;
 }
+
+/* Selection - Checked */
 
 #person:checked + label,
 #online:checked + label {
@@ -164,5 +186,6 @@ input::-webkit-calendar-picker-indicator {
 #online:checked + label .icon svg {
   fill: var(--brand-light)
 }
+
 
 

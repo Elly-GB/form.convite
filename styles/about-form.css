@@ -23,12 +23,13 @@ fieldset#about {
 
   & #type-place {
     flex-direction: row;
+    margin-bottom: 5px;
     gap: 16px;
 
     width: 100%;
 
     & #type {
-      margin-top: 16px;
+      margin-top: 5px;
 
       font: var(--b-sm);
       color: var(--text-body);
@@ -41,7 +42,7 @@ fieldset#about {
         width: 100%;
 
         padding: 4px;
-        margin-top: 17px;
+        margin-top: 10px;
 
 
         background-color: var(--input-base);
@@ -55,9 +56,14 @@ fieldset#about {
 
     & #place {
       display: block;
-      margin-top: 16px;
+      margin-top: 3px;
 
       width: 100%;
+
+      & #local {
+        display: block;
+        width: 100%;
+      }
     }
   }
 
@@ -128,6 +134,8 @@ input:focus::placeholder {
 
 /* Input - Date */
 .date {
+  margin-top: 6px;
+
   & label {
     font: var(--b-sm);
     color: var(--text-body);

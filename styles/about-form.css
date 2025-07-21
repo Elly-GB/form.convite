@@ -60,6 +60,36 @@ fieldset#about {
       width: 100%;
     }
   }
+
+  & #details {
+    display: block;
+    width: 100%;
+
+    & label {
+      font: var(--b-sm);
+      color: var(--text-body);
+    }
+
+    & textarea {
+      resize: none;
+      margin-top: 12px;
+      padding: 16px;
+
+      background-color: var(--input-base);
+      border: 1px solid var(--input-stroke);
+      border-radius: 8px;
+
+      font: var(--b-md);
+
+      &:focus,
+      &:hover {
+        border: 1px solid var(--brand-light);
+        outline: none;
+      }
+    }
+
+
+  }
 }
 
 /* Input - Text */
@@ -187,5 +217,12 @@ input::-webkit-calendar-picker-indicator {
   fill: var(--brand-light)
 }
 
+/* Placeholder */
+textarea:hover::placeholder {
+  color: var(--text-heading);
+}
+textarea:focus::placeholder {
+  color: var(--text-heading);
+}
 
 

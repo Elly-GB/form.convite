@@ -63,6 +63,7 @@ fieldset#about {
       & #local {
         display: block;
         width: 100%;
+
       }
     }
   }
@@ -70,6 +71,8 @@ fieldset#about {
   & #details {
     display: block;
     width: 100%;
+
+    color: var(--text-body);
 
     & label {
       font: var(--b-sm);
@@ -114,6 +117,7 @@ fieldset#about {
     border-radius: 8px;
   
     font: var(--b-md);
+    color: var(--text-body);
     
     &:focus,
     &:hover {

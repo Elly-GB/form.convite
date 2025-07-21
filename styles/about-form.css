@@ -11,10 +11,19 @@ fieldset#about {
 
   & #start-end {
     flex-direction: row;
+    gap: 16px;
+
+    width: 100%;
+
+    & #start, #end {
+      display: block;
+
+      width: 100%;
+    }
   }
 }
 
-/* Input */
+/* Input - Text */
 .input {
   & label {
     font: var(--b-sm);
@@ -46,4 +55,37 @@ input:hover::placeholder {
 }
 input:focus::placeholder {
   color: var(--text-heading);
+}
+
+/* Input - Date */
+.date {
+  & label {
+    font: var(--b-sm);
+    color: var(--text-body);
+  }
+
+  & input {
+    padding: 13px 16px;
+    margin-top: 12px;
+  
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: 8px;
+  
+    font: var(--b-md);
+    color: var(--input-placeholder);
+    text-transform: uppercase;
+    
+    &:focus,
+    &:hover {
+      border: 1px solid var(--brand-light);
+      outline: none;
+      color: var(--text-heading);
+    }
+  }
+}
+
+/* Date */
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
 }

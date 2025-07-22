@@ -12,7 +12,7 @@
       margin-bottom: 40px;
     }
 
-    & #about {
+    .about {
       display: flex;
       align-items: center;
 
@@ -28,5 +28,7 @@
         font: var(--h-sm);
       }
     }
+
+    
   }
 }

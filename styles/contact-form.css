@@ -1,0 +1,18 @@
+fieldset#contact {
+  display: flex;
+  flex-direction: column;
+
+  border: none;
+
+  & #name {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  & #mail-phone {
+    display: flex;
+  }
+}

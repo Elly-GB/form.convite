@@ -98,7 +98,6 @@ fieldset#custom {
 /* Checkbox - Switch */
 
 .style {
-  margin-bottom: 48px;
 
   & label {
     font: var(--b-sm);
@@ -170,7 +169,6 @@ fieldset#custom {
 
 /* File */
 .archive {
-  margin-bottom: 48px;
 
   & label {
     font: var(--b-sm);

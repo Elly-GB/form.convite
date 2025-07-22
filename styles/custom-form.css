@@ -7,6 +7,7 @@ fieldset#custom {
 }
 
 .colors {
+  margin-bottom: 28px;
   & label {
     font: var(--b-sm);
     color: var(--text-body);
@@ -28,8 +29,6 @@ fieldset#custom {
 
       border: 6px solid var(--shape-button);
     }
-
-    /* accent-color: red; quando clica*/
   }
 }
 

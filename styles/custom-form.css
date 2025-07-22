@@ -179,14 +179,24 @@ fieldset#custom {
 
   #select {
     margin-top: 16px;
+    position: relative;
 
+    & input {
+      margin-top: 6px;
+      margin-left: 6px;
+      font: var(--b-sm);
+      color: var(--input-placeholder);
+    }
     & label {
       display: flex;
       text-align: center;
 
+      position: absolute;
+      bottom: -10px;
+
       gap: 8px;
       
-      padding: 10px 12px;
+      padding: 10px 16px;
       background-color: var(--shape-button);
       border-radius: 8px;
 
@@ -212,6 +222,6 @@ fieldset#custom {
   }
 }
 
-#select input[type="file"] {
+/* #select input[type="file"] {
   display: none;
-}
+} */

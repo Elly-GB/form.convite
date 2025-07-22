@@ -30,6 +30,11 @@
       }
     }
 
+    .line {
+      border-bottom: 1px solid var(--input-stroke);
+      width: 100%;
+    }
+
     
   }
 }

@@ -89,3 +89,19 @@ fieldset#custom {
 #photos input[type="radio"]:checked + label {
   outline: 2px solid var(--brand-light);
 }
+
+/* Checkbox - Switch */
+
+.style {
+  margin-bottom: 48px;
+
+  & label {
+    font: var(--b-sm);
+    color: var(--text-body);
+  }
+
+  #toggle {
+    margin-top: 16px;
+  }
+}
+

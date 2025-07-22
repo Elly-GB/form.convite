@@ -24,14 +24,14 @@
       <main id="main-part">
         <h2> Crie seu convite</h2>
 
-        <div id="about">
+        <!-- information .about -->
+        <div id="information" class="about">
           <img src="./assets/icons/calendar.svg" alt="Ícone de calendário.">
           <span> Sobre o evento </span>
         </div>
 
-        <!-- Inputs -->
+        <!-- FIRST - About -->
         <form method="post" enctype="multipart/form-data">
-
           <!-- FIRST - About -->
           <fieldset id="about">
 
@@ -103,8 +103,27 @@
              </div>
 
           </fieldset>
-          <!-- SECOND - -->
+
         </form>
+
+        <!-- customization .about -->
+        <div id="customization" class="about">
+          <img src="./assets/icons/paintbrush-vertical.svg" alt="Ícone de pincel.">
+          <span> Personalização </span>
+        </div>
+
+        <!-- SECOND - Custom -->
+         <form method="post" enctype="multipart/form-data">
+          <!-- SECOND - Custom -->
+           <fieldset id="custom">
+             <!-- colors -->
+             <div id="colors">
+               <label for="colors"> Cor principal </label>
+             </div>
+             <!-- theme -->
+           </fieldset>
+         </form>
+
       </main>
     </div>
   </body>

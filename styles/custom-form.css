@@ -51,6 +51,35 @@ fieldset#custom {
     font: var(--b-sm);
     color: var(--text-body);
   }
+
+  & #photos {
+    margin-top: 16px;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 8px;
+
+    & label {
+      display: flex;
+      flex-direction: column;
+
+      text-align: center;
+
+      background-color: var(--shape-button);
+      border: 1px solid var(--input-stroke);
+      border-radius: 8px;
+
+      padding: 4px 4px 8px 4px;
+
+      & img {
+        margin-bottom: 8px;
+        border-radius: 8px;
+      }
+    }
+ 
+  }
 }
 
 #photos input[type="radio"] {

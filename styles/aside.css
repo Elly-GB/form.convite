@@ -9,7 +9,7 @@
 
     background-image: url(../assets/Background.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     border-radius: 12px;
 

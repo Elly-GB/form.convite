@@ -4,6 +4,7 @@
     margin: 20px;
     padding: 80px 130px;
 
+    overflow: auto;
     background-color: var(--shape-body);
     border-radius: 12px;
 

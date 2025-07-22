@@ -3,6 +3,11 @@ fieldset#custom {
   flex-direction: column;
 
   border: none;
+
+  & #style-archive {
+    display: flex;
+    gap: 8rem;
+  }
 }
 
 /* Radio - Colors */
@@ -133,7 +138,7 @@ fieldset#custom {
 
   top: 2.5px;
   left: 3px;
-  
+
   transition: 0.3s;
 }
 
@@ -161,4 +166,52 @@ fieldset#custom {
 
 #toggle input[type="checkbox"]:checked::after {
   content: "Claro";
+}
+
+/* File */
+.archive {
+  margin-bottom: 48px;
+
+  & label {
+    font: var(--b-sm);
+    color: var(--text-body);
+  }
+
+  #select {
+    margin-top: 16px;
+
+    & label {
+      display: flex;
+      text-align: center;
+
+      gap: 8px;
+      
+      padding: 10px 12px;
+      background-color: var(--shape-button);
+      border-radius: 8px;
+
+      font-weight: 600;
+      cursor: pointer;
+      
+      .svg svg {
+        fill: var(--brand-light);
+  
+        width: 16px;
+        height: 16px;
+      }
+
+      &:hover {
+        background-color: var(--brand-dark);
+
+        .svg svg {
+          fill: var(--text-heading);
+        }
+      }
+    }
+    
+  }
+}
+
+#select input[type="file"] {
+  display: none;
 }

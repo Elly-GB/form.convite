@@ -3,11 +3,13 @@ fieldset#custom {
   flex-direction: column;
 
   border: none;
-
 }
+
+/* Radio - Colors */
 
 .colors {
   margin-bottom: 28px;
+
   & label {
     font: var(--b-sm);
     color: var(--text-body);
@@ -37,5 +39,24 @@ fieldset#custom {
 }
 
 #choices input[type="radio"]:checked + label {
+  outline: 2px solid var(--brand-light);
+}
+
+/* Radio - Theme (photos) */
+
+.theme {
+  margin-bottom: 28px;
+
+  & label {
+    font: var(--b-sm);
+    color: var(--text-body);
+  }
+}
+
+#photos input[type="radio"] {
+  display: none;
+}
+
+#photos input[type="radio"]:checked + label {
   outline: 2px solid var(--brand-light);
 }

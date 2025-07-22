@@ -14,5 +14,17 @@ fieldset#contact {
 
   & #mail-phone {
     display: flex;
+    gap: 16px;
+
+    width: 100%;
+    margin-bottom: 48px;
+
+    #email, #tel {
+      display: flex;
+      flex-direction: column;
+
+      width: 100%;
+    }
   }
 }
+

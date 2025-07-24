@@ -6,10 +6,13 @@ fieldset#terms {
 
   border: none;
   margin-top: 40px;
-  margin-bottom: 48px;
 
   input[type="checkbox"] {
     display: none;
+  }
+
+  #thirty {
+    margin-bottom: 48px;
   }
 }
 

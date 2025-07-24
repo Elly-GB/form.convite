@@ -1,14 +1,17 @@
-<h1 align="center"> Portfólio Dev - Made by: Gabrielly </h1>
+<h1 align="center"> Formulário de Matrícula - Made by: Gabrielly </h1>
+
+<h3 align="center"> Site para Desktop • Front </h3>
 
 <p align="center">
-Programa exclusivo, promovido pela Rocketseat com o propósito de treinar e ensinar habilidades em HTML, CSS e outras tecnologias.
+Programa exclusivo, promovido pela Rocketseat com o propósito <br>
+de treinar e ensinar habilidades em HTML, CSS e outras tecnologias.
 </p>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a hreft="#memo-licença">Agradecimento</a>
+  <a href="#-projeto">Agradecimento</a>
 </p>
 
 <p align="center">
@@ -26,12 +29,13 @@ Programa exclusivo, promovido pela Rocketseat com o propósito de treinar e ensi
 Desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
+- JavaScript
 - Figma
 - Git e Github
 
 ## 🎀 Projeto
 
-Um portfólio com informações do usuário, como suas eperiências e conhecimentos.
+A interface de um site que, a partir das características e informações selecionadas, um convite será feito.
 
 ## :memo: Licença
 
@@ -39,8 +43,9 @@ Esse projeto está sob a licença MIT.
 
 
 ## 💗 Agradecimento
+
 Obrigada pela atenção ♥ <br>
-Espero que goste dos meus projetos e me apoie nessa jornada! beijinhos ~ <br>
+Espero que goste dos meus projetos e me apoie nessa jornada! <br>
 -- de Elly ✨ --
 
 

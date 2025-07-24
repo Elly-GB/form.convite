@@ -16,6 +16,7 @@ fieldset#about {
 
     & #start, #end {
       display: block;
+      margin-bottom: 10px;
 
       width: 100%;
     }
@@ -111,6 +112,7 @@ fieldset#about {
   & input {
     padding: 13px 16px;
     margin-top: 12px;
+    margin-bottom: 16px;
   
     background-color: var(--input-base);
     border: 1px solid var(--input-stroke);

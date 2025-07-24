@@ -216,12 +216,16 @@ fieldset#custom {
 
       font-weight: 600;
       cursor: pointer;
+
+      transition: 0.3s;
       
       .svg svg {
         fill: var(--brand-light);
   
         width: 16px;
         height: 16px;
+
+        transition: 0.3s;
       }
 
       &:hover {

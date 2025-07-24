@@ -103,6 +103,7 @@ fieldset#terms {
     color: var(--text-heading);
 
     cursor: pointer;
+    transition: 0.3s;
 
     .ticket {
       & svg {

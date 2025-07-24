@@ -24,350 +24,356 @@
       <main id="main-part">
         <h2> Crie seu convite</h2>
 
-        <!-- information .about -->
-        <div id="information" class="about">
-          <img src="./assets/icons/calendar.svg" alt="Ícone de calendário.">
-          <span> Sobre o evento </span>
-        </div>
-
-        <!-- FIRST - About -->
-        <form method="post" enctype="multipart/form-data">
-          <!-- FIRST - About -->
-          <fieldset id="about">
-
-            <!-- title -->
-            <div id="title" class="input">
-              <label for="title"> Título </label>
-              <input type="text" id="title" name="title" placeholder="Nome do evento" required>
-            </div>
-
-            <!-- start & end -->
-             <div id="start-end" class="flex">
-                <!-- start -->
-                 <div id="start" class="date">
-                  <label for="start"> Início </label>
-                  <input type="datetime-local" id="start" name="start">
-                 </div>
-                <!-- end -->
-                 <div id="end" class="date">
-                  <label for="end"> Fim </label>
-                  <input type="datetime-local" id="end" name="end">
-                 </div>
-             </div>
-
-             <!-- type & place -->
-             <div id="type-place" class="flex">
-              <!-- type -->
-               <div id="type">
-                <label for="type"> Tipo </label>
-                <!-- options -->
-                 <div id="options">
-                  <!-- PERSON -->
-                   <div id="fisico">
-                    <input type="radio" id="person" name="option" checked>
-                    <label for="person" class="radio presencial">
-                      <!-- svg -->
-                      <span class="icon">
-                        <svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M10.6666 3.66675C10.2246 3.66675 9.80067 3.84234 9.48811 4.1549C9.17555 4.46746 8.99996 4.89139 8.99996 5.33341V28.3334H23V5.33341C23 4.89139 22.8244 4.46746 22.5118 4.1549C22.1992 3.84234 21.7753 3.66675 21.3333 3.66675H10.6666ZM25 11.0001V5.33341C25 4.36095 24.6136 3.42832 23.926 2.74069C23.2384 2.05306 22.3058 1.66675 21.3333 1.66675H10.6666C9.69417 1.66675 8.76153 2.05306 8.0739 2.74069C7.38627 3.42832 6.99996 4.36095 6.99996 5.33341V15.0001H5.33329C4.36083 15.0001 3.4282 15.3864 2.74057 16.074C2.05293 16.7617 1.66663 17.6943 1.66663 18.6667V26.6667C1.66663 27.6392 2.05293 28.5718 2.74057 29.2595C3.4282 29.9471 4.36083 30.3334 5.33329 30.3334H26.6666C27.6391 30.3334 28.5717 29.9471 29.2593 29.2595C29.947 28.5718 30.3333 27.6392 30.3333 26.6667V14.6667C30.3333 13.6943 29.947 12.7617 29.2593 12.074C28.5717 11.3864 27.6391 11.0001 26.6666 11.0001H25ZM25 13.0001V28.3334H26.6666C27.1087 28.3334 27.5326 28.1578 27.8451 27.8453C28.1577 27.5327 28.3333 27.1088 28.3333 26.6667V14.6667C28.3333 14.2247 28.1577 13.8008 27.8451 13.4882C27.5326 13.1757 27.1087 13.0001 26.6666 13.0001H25ZM6.99996 17.0001H5.33329C4.89127 17.0001 4.46734 17.1757 4.15478 17.4882C3.84222 17.8008 3.66663 18.2247 3.66663 18.6667V26.6667C3.66663 27.1088 3.84222 27.5327 4.15478 27.8453C4.46734 28.1578 4.89127 28.3334 5.33329 28.3334H6.99996V17.0001ZM12.3333 8.00008C12.3333 7.4478 12.781 7.00008 13.3333 7.00008H18.6666C19.2189 7.00008 19.6666 7.4478 19.6666 8.00008C19.6666 8.55237 19.2189 9.00008 18.6666 9.00008H13.3333C12.781 9.00008 12.3333 8.55237 12.3333 8.00008ZM12.3333 13.3334C12.3333 12.7811 12.781 12.3334 13.3333 12.3334H18.6666C19.2189 12.3334 19.6666 12.7811 19.6666 13.3334C19.6666 13.8857 19.2189 14.3334 18.6666 14.3334H13.3333C12.781 14.3334 12.3333 13.8857 12.3333 13.3334ZM12.3333 18.6667C12.3333 18.1145 12.781 17.6667 13.3333 17.6667H18.6666C19.2189 17.6667 19.6666 18.1145 19.6666 18.6667C19.6666 19.219 19.2189 19.6667 18.6666 19.6667H13.3333C12.781 19.6667 12.3333 19.219 12.3333 18.6667ZM12.3333 24.0001C12.3333 23.4478 12.781 23.0001 13.3333 23.0001H18.6666C19.2189 23.0001 19.6666 23.4478 19.6666 24.0001C19.6666 24.5524 19.2189 25.0001 18.6666 25.0001H13.3333C12.781 25.0001 12.3333 24.5524 12.3333 24.0001Z"/></svg>
-                      </span>
-                      Presencial
-                    </label>
-                   </div>
-
-                  <!-- ONLINE -->
-                   <div id="virtual">
-                    <input type="radio" id="online" name="option">
-                    <label for="online" class="radio online">
-                      <!-- svg -->
-                      <span class="icon">
-                        <svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M5.33329 9C4.41282 9 3.66663 9.74619 3.66663 10.6667V21.3333C3.66663 22.2538 4.41282 23 5.33329 23H18.6666C19.5871 23 20.3333 22.2538 20.3333 21.3333V17.347C20.3332 17.3373 20.3332 17.3276 20.3333 17.3178V14.019C20.3331 14.0069 20.3331 13.9949 20.3333 13.9829V10.6667C20.3333 9.74619 19.5871 9 18.6666 9H5.33329ZM22.3333 12.2588V10.6667C22.3333 8.64162 20.6917 7 18.6666 7H5.33329C3.30825 7 1.66663 8.64162 1.66663 10.6667V21.3333C1.66663 23.3584 3.30825 25 5.33329 25H18.6666C20.6917 25 22.3333 23.3584 22.3333 21.3333V19.2019L27.7433 22.8085C27.9943 22.9755 28.2859 23.0713 28.587 23.0858C28.8881 23.1002 29.1875 23.0326 29.4533 22.8903C29.7191 22.748 29.9413 22.5363 30.0962 22.2777C30.2512 22.0191 30.3331 21.7233 30.3333 21.4219V10.4936C30.3333 10.4935 30.3333 10.4937 30.3333 10.4936C30.3333 10.2005 30.256 9.9122 30.1092 9.65845C29.9624 9.40462 29.7511 9.19404 29.4968 9.04796C29.2425 8.90188 28.9542 8.82548 28.661 8.82648C28.3677 8.82747 28.0799 8.90583 27.8266 9.05363L22.3333 12.2588ZM22.3333 14.5743V16.7982L28.3333 20.7982V11.0735L22.3333 14.5743Z"/></svg>
-                      </span>
-                      Online
-                    </label>
-                   </div>
-                 </div>
-               </div>
-
-              <!-- place -->
-               <div id="place" class="input">
-                  <label for="local"> Local </label>
-                  <input type="text" id="local" name="local" placeholder="Link ou endereço" required>
-               </div>
-
-             </div>
-
-            <!-- details -->
-             <div id="details" class="">
-                <label for="details"> Descrição </label>
-                <textarea id="details" name="details" type="textarea" cols="30" rows="4" placeholder="Escreva sobre os detalhes do evento..." ></textarea>
-             </div>
-
-          </fieldset>
-        </form>
-
-        <!-- customization .about -->
-        <div id="customization" class="about">
-          <img src="./assets/icons/paintbrush-vertical.svg" alt="Ícone de pincel.">
-          <span> Personalização </span>
-        </div>
-
-        <!-- SECOND - Custom -->
+        <!-- ALL -->
          <form method="post" enctype="multipart/form-data">
-          <!-- SECOND - Custom -->
-           <fieldset id="custom">
-             <!-- colors -->
-             <div id="colors" class="colors">
-               <label for="colors"> Cor principal </label>
-              <!-- choices -->
-               <div id="choices">
-                <input type="radio" id="blue" name="choice">
-                <label for="blue" style="background-color: #59B2FF"></label>
-
-                <input type="radio" id="purple" name="choice">
-                <label for="purple" style="background-color: #6A59FF;"></label>
-
-                <input type="radio" id="magenta" name="choice">
-                <label for="magenta" style="background-color: #B259FF;"></label>
-
-                <input type="radio" id="pink" name="choice">
-                <label for="pink" style="background-color: #FF59F9;"></label>
-
-                <input type="radio" id="salmon" name="choice">
-                <label for="salmon" style="background-color: #FF598B;"></label>
-
-                <input type="radio" id="red" name="choice">
-                <label for="red" style="background-color: #FF5959;"></label>
-
-                <input type="radio" id="orange" name="choice">
-                <label for="orange" style="background-color: #FF8B59;"></label>
-
-                <input type="radio" id="yellow" name="choice">
-                <label for="yellow" style="background-color: #FFCD59;"></label>
-
-                <input type="radio" id="lime" name="choice">
-                <label for="lime" style="background-color: #E1FF59;"></label>
-
-                <input type="radio" id="green" name="choice">
-                <label for="green" style="background-color: #59FF91;"></label>
-
-                <input type="radio" id="cyan" name="choice">
-                <label for="cyan" style="background-color: #59FFF9;"></label>
-
+           <!-- information .about -->
+           <div id="information" class="about">
+             <img src="./assets/icons/calendar.svg" alt="Ícone de calendário.">
+             <span> Sobre o evento </span>
+           </div>
+   
+           <!-- FIRST - About -->
+           <form method="post" enctype="multipart/form-data">
+             <!-- FIRST - About -->
+             <fieldset id="about">
+   
+               <!-- title -->
+               <div id="title" class="input">
+                 <label for="title"> Título </label>
+                 <input type="text" id="title" name="title" placeholder="Nome do evento" required>
                </div>
-             </div>
-
-             <!-- theme -->
-              <div id="theme" class="theme">
-                <label for="theme"> Tema do evento </label>
-
-                <div id="photos">
-                  <!-- birth -->
-                  <input type="radio" id="birth" name="choose">
-                  <label for="birth">
-                    <img src="./assets/images/birth.jpg" alt=""> Aniversário
-                  </label>
-
-                  <!-- birthday -->
-                  <input type="radio" id="birthday" name="choose">
-                  <label for="birthday">
-                    <img src="./assets/images/birthday.jpg" alt=""> Infantil
-                  </label>
-
-                  <!-- graduation -->
-                  <input type="radio" id="graduation" name="choose">
-                  <label for="graduation">
-                    <img src="./assets/images/graduation.jpg" alt=""> Formatura
-                  </label>
-
-                  <!-- marriage -->
-                  <input type="radio" id="marriage" name="choose">
-                  <label for="marriage">
-                    <img src="./assets/images/marriage.jpg" alt=""> Casamento
-                  </label>
-
-                  <!-- babytea -->
-                  <input type="radio" id="babytea" name="choose">
-                  <label for="babytea">
-                    <img src="./assets/images/babytea.jpg" alt=""> Chá de bebê
-                  </label>
-
-                  <!-- bridalshower -->
-                  <input type="radio" id="bridalshower" name="choose">
-                  <label for="bridalshower">
-                    <img src="./assets/images/bridalshower.jpg" alt=""> Chá de panela
-                  </label>
-
-                  <!-- carnival -->
-                  <input type="radio" id="carnival" name="choose">
-                  <label for="carnival">
-                    <img src="./assets/images/carnival.jpg" alt=""> Carnaval
-                  </label>
-
-                  <!-- easter -->
-                  <input type="radio" id="easter" name="choose">
-                  <label for="easter">
-                    <img src="./assets/images/easter.jpg" alt=""> Páscoa
-                  </label>
-
-                  <!-- countryfairs -->
-                  <input type="radio" id="countryfairs" name="choose">
-                  <label for="countryfairs">
-                    <img src="./assets/images/countryfairs.jpg" alt=""> São João
-                  </label>
-
-                  <!-- halloween -->
-                  <input type="radio" id="halloween" name="choose">
-                  <label for="halloween">
-                    <img src="./assets/images/halloween.jpg" alt=""> Halloween
-                  </label>
-
-                  <!-- christmas -->
-                  <input type="radio" id="christmas" name="choose">
-                  <label for="christmas">
-                    <img src="./assets/images/christmas.jpg" alt=""> Natal
-                  </label>
-
-                  <!-- other -->
-                  <input type="radio" id="other" name="choose">
-                  <label for="other">
-                    <img src="./assets/images/other.jpg" alt=""> Outro
-                  </label>
-
+   
+               <!-- start & end -->
+                <div id="start-end" class="flex">
+                   <!-- start -->
+                    <div id="start" class="date">
+                     <label for="start"> Início </label>
+                     <input type="datetime-local" id="start" name="start">
+                    </div>
+                   <!-- end -->
+                    <div id="end" class="date">
+                     <label for="end"> Fim </label>
+                     <input type="datetime-local" id="end" name="end">
+                    </div>
                 </div>
-              </div>
-
-              <!-- style & archive -->
-              <div id="style-archive">
-                <!-- style -->
-                <div id="style" class="style">
-                  <label for="style"> Estilo </label>
-                  <div id="toggle">
-                    <input type="checkbox" id="switch">
-                    <label for="switch"></label>
+   
+                <!-- type & place -->
+                <div id="type-place" class="flex">
+                 <!-- type -->
+                  <div id="type">
+                   <label for="type"> Tipo </label>
+                   <!-- options -->
+                    <div id="options">
+                     <!-- PERSON -->
+                      <div id="fisico">
+                       <input type="radio" id="person" name="option" checked>
+                       <label for="person" class="radio presencial">
+                         <!-- svg -->
+                         <span class="icon">
+                           <svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M10.6666 3.66675C10.2246 3.66675 9.80067 3.84234 9.48811 4.1549C9.17555 4.46746 8.99996 4.89139 8.99996 5.33341V28.3334H23V5.33341C23 4.89139 22.8244 4.46746 22.5118 4.1549C22.1992 3.84234 21.7753 3.66675 21.3333 3.66675H10.6666ZM25 11.0001V5.33341C25 4.36095 24.6136 3.42832 23.926 2.74069C23.2384 2.05306 22.3058 1.66675 21.3333 1.66675H10.6666C9.69417 1.66675 8.76153 2.05306 8.0739 2.74069C7.38627 3.42832 6.99996 4.36095 6.99996 5.33341V15.0001H5.33329C4.36083 15.0001 3.4282 15.3864 2.74057 16.074C2.05293 16.7617 1.66663 17.6943 1.66663 18.6667V26.6667C1.66663 27.6392 2.05293 28.5718 2.74057 29.2595C3.4282 29.9471 4.36083 30.3334 5.33329 30.3334H26.6666C27.6391 30.3334 28.5717 29.9471 29.2593 29.2595C29.947 28.5718 30.3333 27.6392 30.3333 26.6667V14.6667C30.3333 13.6943 29.947 12.7617 29.2593 12.074C28.5717 11.3864 27.6391 11.0001 26.6666 11.0001H25ZM25 13.0001V28.3334H26.6666C27.1087 28.3334 27.5326 28.1578 27.8451 27.8453C28.1577 27.5327 28.3333 27.1088 28.3333 26.6667V14.6667C28.3333 14.2247 28.1577 13.8008 27.8451 13.4882C27.5326 13.1757 27.1087 13.0001 26.6666 13.0001H25ZM6.99996 17.0001H5.33329C4.89127 17.0001 4.46734 17.1757 4.15478 17.4882C3.84222 17.8008 3.66663 18.2247 3.66663 18.6667V26.6667C3.66663 27.1088 3.84222 27.5327 4.15478 27.8453C4.46734 28.1578 4.89127 28.3334 5.33329 28.3334H6.99996V17.0001ZM12.3333 8.00008C12.3333 7.4478 12.781 7.00008 13.3333 7.00008H18.6666C19.2189 7.00008 19.6666 7.4478 19.6666 8.00008C19.6666 8.55237 19.2189 9.00008 18.6666 9.00008H13.3333C12.781 9.00008 12.3333 8.55237 12.3333 8.00008ZM12.3333 13.3334C12.3333 12.7811 12.781 12.3334 13.3333 12.3334H18.6666C19.2189 12.3334 19.6666 12.7811 19.6666 13.3334C19.6666 13.8857 19.2189 14.3334 18.6666 14.3334H13.3333C12.781 14.3334 12.3333 13.8857 12.3333 13.3334ZM12.3333 18.6667C12.3333 18.1145 12.781 17.6667 13.3333 17.6667H18.6666C19.2189 17.6667 19.6666 18.1145 19.6666 18.6667C19.6666 19.219 19.2189 19.6667 18.6666 19.6667H13.3333C12.781 19.6667 12.3333 19.219 12.3333 18.6667ZM12.3333 24.0001C12.3333 23.4478 12.781 23.0001 13.3333 23.0001H18.6666C19.2189 23.0001 19.6666 23.4478 19.6666 24.0001C19.6666 24.5524 19.2189 25.0001 18.6666 25.0001H13.3333C12.781 25.0001 12.3333 24.5524 12.3333 24.0001Z"/></svg>
+                         </span>
+                         Presencial
+                       </label>
+                      </div>
+   
+                     <!-- ONLINE -->
+                      <div id="virtual">
+                       <input type="radio" id="online" name="option">
+                       <label for="online" class="radio online">
+                         <!-- svg -->
+                         <span class="icon">
+                           <svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M5.33329 9C4.41282 9 3.66663 9.74619 3.66663 10.6667V21.3333C3.66663 22.2538 4.41282 23 5.33329 23H18.6666C19.5871 23 20.3333 22.2538 20.3333 21.3333V17.347C20.3332 17.3373 20.3332 17.3276 20.3333 17.3178V14.019C20.3331 14.0069 20.3331 13.9949 20.3333 13.9829V10.6667C20.3333 9.74619 19.5871 9 18.6666 9H5.33329ZM22.3333 12.2588V10.6667C22.3333 8.64162 20.6917 7 18.6666 7H5.33329C3.30825 7 1.66663 8.64162 1.66663 10.6667V21.3333C1.66663 23.3584 3.30825 25 5.33329 25H18.6666C20.6917 25 22.3333 23.3584 22.3333 21.3333V19.2019L27.7433 22.8085C27.9943 22.9755 28.2859 23.0713 28.587 23.0858C28.8881 23.1002 29.1875 23.0326 29.4533 22.8903C29.7191 22.748 29.9413 22.5363 30.0962 22.2777C30.2512 22.0191 30.3331 21.7233 30.3333 21.4219V10.4936C30.3333 10.4935 30.3333 10.4937 30.3333 10.4936C30.3333 10.2005 30.256 9.9122 30.1092 9.65845C29.9624 9.40462 29.7511 9.19404 29.4968 9.04796C29.2425 8.90188 28.9542 8.82548 28.661 8.82648C28.3677 8.82747 28.0799 8.90583 27.8266 9.05363L22.3333 12.2588ZM22.3333 14.5743V16.7982L28.3333 20.7982V11.0735L22.3333 14.5743Z"/></svg>
+                         </span>
+                         Online
+                       </label>
+                      </div>
+                    </div>
+                  </div>
+   
+                 <!-- place -->
+                  <div id="place" class="input">
+                     <label for="local"> Local </label>
+                     <input type="text" id="local" name="local" placeholder="Link ou endereço" required>
+                  </div>
+   
+                </div>
+   
+               <!-- details -->
+                <div id="details">
+                   <label for="details"> Descrição </label>
+                   <textarea id="details" name="details" type="textarea" cols="30" rows="4" placeholder="Escreva sobre os detalhes do evento..." ></textarea>
+                </div>
+   
+             </fieldset>
+           </form>
+   
+           <!-- customization .about -->
+           <div id="customization" class="about">
+             <img src="./assets/icons/paintbrush-vertical.svg" alt="Ícone de pincel.">
+             <span> Personalização </span>
+           </div>
+   
+           <!-- SECOND - Custom -->
+            <form method="post" enctype="multipart/form-data">
+             <!-- SECOND - Custom -->
+              <fieldset id="custom">
+                <!-- colors -->
+                <div id="colors" class="colors">
+                  <label for="colors"> Cor principal </label>
+                 <!-- choices -->
+                  <div id="choices">
+                   <input type="radio" id="blue" name="choice">
+                   <label for="blue" style="background-color: #59B2FF"></label>
+   
+                   <input type="radio" id="purple" name="choice">
+                   <label for="purple" style="background-color: #6A59FF;"></label>
+   
+                   <input type="radio" id="magenta" name="choice">
+                   <label for="magenta" style="background-color: #B259FF;"></label>
+   
+                   <input type="radio" id="pink" name="choice">
+                   <label for="pink" style="background-color: #FF59F9;"></label>
+   
+                   <input type="radio" id="salmon" name="choice">
+                   <label for="salmon" style="background-color: #FF598B;"></label>
+   
+                   <input type="radio" id="red" name="choice">
+                   <label for="red" style="background-color: #FF5959;"></label>
+   
+                   <input type="radio" id="orange" name="choice">
+                   <label for="orange" style="background-color: #FF8B59;"></label>
+   
+                   <input type="radio" id="yellow" name="choice">
+                   <label for="yellow" style="background-color: #FFCD59;"></label>
+   
+                   <input type="radio" id="lime" name="choice">
+                   <label for="lime" style="background-color: #E1FF59;"></label>
+   
+                   <input type="radio" id="green" name="choice">
+                   <label for="green" style="background-color: #59FF91;"></label>
+   
+                   <input type="radio" id="cyan" name="choice">
+                   <label for="cyan" style="background-color: #59FFF9;"></label>
+   
                   </div>
                 </div>
-                <!-- archive -->
-                <div id="archive" class="archive"> 
-                  <label for="archive"> Foto de capa </label>
-                  <div id="select">
-                    <input type="file" id="file">
-                    <label for="file"> 
-                      <!-- svg -->
-                      <span class="svg">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2929 3.29289C15.6834 2.90237 16.3166 2.90237 16.7071 3.29289L23.3738 9.95956C23.7643 10.3501 23.7643 10.9832 23.3738 11.3738C22.9832 11.7643 22.3501 11.7643 21.9596 11.3738L17 6.41421V20C17 20.5523 16.5523 21 16 21C15.4477 21 15 20.5523 15 20V6.41421L10.0404 11.3738C9.64992 11.7643 9.01675 11.7643 8.62623 11.3738C8.2357 10.9832 8.2357 10.3501 8.62623 9.95956L15.2929 3.29289ZM4 19C4.55228 19 5 19.4477 5 20V25.3333C5 25.7754 5.17559 26.1993 5.48816 26.5118C5.80072 26.8244 6.22464 27 6.66667 27H25.3333C25.7754 27 26.1993 26.8244 26.5118 26.5118C26.8244 26.1993 27 25.7754 27 25.3333V20C27 19.4477 27.4477 19 28 19C28.5523 19 29 19.4477 29 20V25.3333C29 26.3058 28.6137 27.2384 27.9261 27.9261C27.2384 28.6137 26.3058 29 25.3333 29H6.66667C5.69421 29 4.76157 28.6137 4.07394 27.9261C3.38631 27.2384 3 26.3058 3 25.3333V20C3 19.4477 3.44772 19 4 19Z"/>
-                        </svg>
-                      </span>
-                      Selecionar 
-                    </label>
-                  </div>
+   
+                <!-- theme -->
+                 <div id="theme" class="theme">
+                   <label for="theme"> Tema do evento </label>
+   
+                   <div id="photos">
+                     <!-- birth -->
+                     <input type="radio" id="birth" name="choose">
+                     <label for="birth">
+                       <img src="./assets/images/birth.jpg" alt=""> Aniversário
+                     </label>
+   
+                     <!-- birthday -->
+                     <input type="radio" id="birthday" name="choose">
+                     <label for="birthday">
+                       <img src="./assets/images/birthday.jpg" alt=""> Infantil
+                     </label>
+   
+                     <!-- graduation -->
+                     <input type="radio" id="graduation" name="choose">
+                     <label for="graduation">
+                       <img src="./assets/images/graduation.jpg" alt=""> Formatura
+                     </label>
+   
+                     <!-- marriage -->
+                     <input type="radio" id="marriage" name="choose">
+                     <label for="marriage">
+                       <img src="./assets/images/marriage.jpg" alt=""> Casamento
+                     </label>
+   
+                     <!-- babytea -->
+                     <input type="radio" id="babytea" name="choose">
+                     <label for="babytea">
+                       <img src="./assets/images/babytea.jpg" alt=""> Chá de bebê
+                     </label>
+   
+                     <!-- bridalshower -->
+                     <input type="radio" id="bridalshower" name="choose">
+                     <label for="bridalshower">
+                       <img src="./assets/images/bridalshower.jpg" alt=""> Chá de panela
+                     </label>
+   
+                     <!-- carnival -->
+                     <input type="radio" id="carnival" name="choose">
+                     <label for="carnival">
+                       <img src="./assets/images/carnival.jpg" alt=""> Carnaval
+                     </label>
+   
+                     <!-- easter -->
+                     <input type="radio" id="easter" name="choose">
+                     <label for="easter">
+                       <img src="./assets/images/easter.jpg" alt=""> Páscoa
+                     </label>
+   
+                     <!-- countryfairs -->
+                     <input type="radio" id="countryfairs" name="choose">
+                     <label for="countryfairs">
+                       <img src="./assets/images/countryfairs.jpg" alt=""> São João
+                     </label>
+   
+                     <!-- halloween -->
+                     <input type="radio" id="halloween" name="choose">
+                     <label for="halloween">
+                       <img src="./assets/images/halloween.jpg" alt=""> Halloween
+                     </label>
+   
+                     <!-- christmas -->
+                     <input type="radio" id="christmas" name="choose">
+                     <label for="christmas">
+                       <img src="./assets/images/christmas.jpg" alt=""> Natal
+                     </label>
+   
+                     <!-- other -->
+                     <input type="radio" id="other" name="choose">
+                     <label for="other">
+                       <img src="./assets/images/other.jpg" alt=""> Outro
+                     </label>
+   
+                   </div>
+                 </div>
+   
+                 <!-- style & archive -->
+                 <div id="style-archive">
+                   <!-- style -->
+                   <div id="style" class="style">
+                     <label for="style"> Estilo </label>
+                     <div id="toggle">
+                       <input type="checkbox" id="switch">
+                       <label for="switch"></label>
+                     </div>
+                   </div>
+                   <!-- archive -->
+                   <div id="archive" class="archive"> 
+                     <label for="archive"> Foto de capa </label>
+                     <div id="select">
+                       <input type="file" id="file">
+                       <label for="file"> 
+                         <!-- svg -->
+                         <span class="svg">
+                           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2929 3.29289C15.6834 2.90237 16.3166 2.90237 16.7071 3.29289L23.3738 9.95956C23.7643 10.3501 23.7643 10.9832 23.3738 11.3738C22.9832 11.7643 22.3501 11.7643 21.9596 11.3738L17 6.41421V20C17 20.5523 16.5523 21 16 21C15.4477 21 15 20.5523 15 20V6.41421L10.0404 11.3738C9.64992 11.7643 9.01675 11.7643 8.62623 11.3738C8.2357 10.9832 8.2357 10.3501 8.62623 9.95956L15.2929 3.29289ZM4 19C4.55228 19 5 19.4477 5 20V25.3333C5 25.7754 5.17559 26.1993 5.48816 26.5118C5.80072 26.8244 6.22464 27 6.66667 27H25.3333C25.7754 27 26.1993 26.8244 26.5118 26.5118C26.8244 26.1993 27 25.7754 27 25.3333V20C27 19.4477 27.4477 19 28 19C28.5523 19 29 19.4477 29 20V25.3333C29 26.3058 28.6137 27.2384 27.9261 27.9261C27.2384 28.6137 26.3058 29 25.3333 29H6.66667C5.69421 29 4.76157 28.6137 4.07394 27.9261C3.38631 27.2384 3 26.3058 3 25.3333V20C3 19.4477 3.44772 19 4 19Z"/>
+                           </svg>
+                         </span>
+                         Selecionar 
+                       </label>
+                     </div>
+                   </div>
+   
+                 </div>
+              </fieldset>
+            </form>
+   
+           <!-- information .about -->
+            <div id="information" class="about">
+               <img src="./assets/icons/contact.svg" alt="Ícone de contato.">
+               <span> Dados para contato </span>
+            </div>
+   
+           <!-- THIRTY - Contact -->
+           <form method="post" enctype="multipart/form-data">
+             <fieldset id="contact">
+               <!-- name -->
+               <div id="name" class="input">
+                 <label for="fullname"> Nome </label>
+                 <input type="text" id="fullname" name="fullname" placeholder="Nome completo" required>
+               </div>
+   
+               <!-- mail & phone -->
+                <div id="mail-phone">
+                 <!-- email -->
+                 <div id="email" class="input">
+                   <label for="mail"> E-mail </label>
+                   <input type="email" id="mail" name="mail" placeholder="exemplo@email.com" required>
+                 </div>
+                 <!-- tel -->
+                 <div id="tel" class="input">
+                   <label for="phone"> Telefone </label>
+                   <input type="tel" id="phone" name="phone" placeholder="(99)99999-9999">
+                 </div>
                 </div>
+             </fieldset>
+           </form>
+   
+           <!-- line -->
+           <div class="line"></div>
+   
+           <!-- TERMS -->
+            <form method="post" enctype="multipart/form-data">
+   
+             <!-- terms -->
+             <fieldset id="terms">
+               <!-- 1 -->
+               <div id="first" class="check">
+                 <!-- One -->
+                 <label>
+                   <input type="checkbox" id="checkone">
+                   <span class="icon">
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6868 3.64645C13.8821 3.84171 13.8821 4.15829 13.6868 4.35355L6.35351 11.6869C6.15825 11.8821 5.84167 11.8821 5.64641 11.6869L2.31307 8.35355C2.11781 8.15829 2.11781 7.84171 2.31307 7.64645C2.50833 7.45118 2.82492 7.45118 3.02018 7.64645L5.99996 10.6262L12.9797 3.64645C13.175 3.45118 13.4916 3.45118 13.6868 3.64645Z"/>
+                     </svg>
+                   </span>
+                 </label>
+                 <!-- write -->
+                 <p> Li e concordo com os <a href="#"> Termos e Condições </a> e com a <a href="#"> Política de Privacidade </a>
+                 </p>
+               </div>
+   
+               <!-- 2 -->
+               <div id="second" class="check">
+                 <!-- Two -->
+                  <label>
+                   <input type="checkbox" id="checktwo">
+                   <span class="icon">
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6868 3.64645C13.8821 3.84171 13.8821 4.15829 13.6868 4.35355L6.35351 11.6869C6.15825 11.8821 5.84167 11.8821 5.64641 11.6869L2.31307 8.35355C2.11781 8.15829 2.11781 7.84171 2.31307 7.64645C2.50833 7.45118 2.82492 7.45118 3.02018 7.64645L5.99996 10.6262L12.9797 3.64645C13.175 3.45118 13.4916 3.45118 13.6868 3.64645Z"/>
+                     </svg>
+                   </span>
+                 </label>
+                 <!-- write -->
+                 <p> Aceito receber atualizações e promoções por e-mail </p>
+               </div>
+   
+               <!-- 3 -->
+               <div id="thirty" class="check">
+                 <!-- Three -->
+                  <label>
+                   <input type="checkbox" id="checkthree">
+                   <span class="icon">
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6868 3.64645C13.8821 3.84171 13.8821 4.15829 13.6868 4.35355L6.35351 11.6869C6.15825 11.8821 5.84167 11.8821 5.64641 11.6869L2.31307 8.35355C2.11781 8.15829 2.11781 7.84171 2.31307 7.64645C2.50833 7.45118 2.82492 7.45118 3.02018 7.64645L5.99996 10.6262L12.9797 3.64645C13.175 3.45118 13.4916 3.45118 13.6868 3.64645Z"/>
+                     </svg>
+                   </span>
+                 </label>
+                 <!-- write -->
+                 <p> Aceito receber atualizações e promoções por SMS </p>
+               </div>
+   
+               
+             </fieldset>
+           </form>
+           
+           <!-- Submit -->
+            <div id="submit" class="button">
+             <button type="submit">
+               <!-- svg -->
+               <span class="ticket">
+                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.71284 4.21284C2.14261 3.78307 2.7255 3.54163 3.33329 3.54163H16.6666C17.2744 3.54163 17.8573 3.78307 18.2871 4.21284C18.7168 4.64261 18.9583 5.2255 18.9583 5.83329V7.49996C18.9583 7.84514 18.6785 8.12496 18.3333 8.12496C17.836 8.12496 17.3591 8.3225 17.0075 8.67413C16.6558 9.02576 16.4583 9.50268 16.4583 9.99996C16.4583 10.4972 16.6558 10.9742 17.0075 11.3258C17.3591 11.6774 17.836 11.875 18.3333 11.875C18.6785 11.875 18.9583 12.1548 18.9583 12.5V14.1666C18.9583 14.7744 18.7168 15.3573 18.2871 15.7871C17.8573 16.2168 17.2744 16.4583 16.6666 16.4583H3.33329C2.7255 16.4583 2.14261 16.2168 1.71284 15.7871C1.28307 15.3573 1.04163 14.7744 1.04163 14.1666V12.5C1.04163 12.1548 1.32145 11.875 1.66663 11.875C2.16391 11.875 2.64082 11.6774 2.99245 11.3258C3.34408 10.9742 3.54163 10.4972 3.54163 9.99996C3.54163 9.50268 3.34408 9.02576 2.99245 8.67413C2.64082 8.3225 2.16391 8.12496 1.66663 8.12496C1.32145 8.12496 1.04163 7.84514 1.04163 7.49996V5.83329C1.04163 5.2255 1.28307 4.64261 1.71284 4.21284ZM11.4583 15.2083V14.1666C11.4583 13.8214 11.1785 13.5416 10.8333 13.5416C10.4881 13.5416 10.2083 13.8214 10.2083 14.1666V15.2083H3.33329C3.05703 15.2083 2.79207 15.0985 2.59672 14.9032C2.40137 14.7078 2.29163 14.4429 2.29163 14.1666V13.0618C2.88753 12.9402 3.43985 12.6462 3.87633 12.2097C4.46239 11.6236 4.79163 10.8288 4.79163 9.99996C4.79163 9.17116 4.46239 8.3763 3.87633 7.79025C3.43985 7.35376 2.88753 7.05973 2.29163 6.93808V5.83329C2.29163 5.55703 2.40137 5.29207 2.59672 5.09672C2.79207 4.90137 3.05703 4.79163 3.33329 4.79163H10.2083V5.83329C10.2083 6.17847 10.4881 6.45829 10.8333 6.45829C11.1785 6.45829 11.4583 6.17847 11.4583 5.83329V4.79163H16.6666C16.9429 4.79163 17.2078 4.90137 17.4032 5.09672C17.5985 5.29207 17.7083 5.55703 17.7083 5.83329V6.93808C17.1124 7.05973 16.5601 7.35376 16.1236 7.79025C15.5375 8.3763 15.2083 9.17116 15.2083 9.99996C15.2083 10.8288 15.5375 11.6236 16.1236 12.2097C16.5601 12.6462 17.1124 12.9402 17.7083 13.0618V14.1666C17.7083 14.4429 17.5985 14.7078 17.4032 14.9032C17.2078 15.0985 16.9429 15.2083 16.6666 15.2083H11.4583ZM10.8333 8.54163C11.1785 8.54163 11.4583 8.82145 11.4583 9.16663V10.8333C11.4583 11.1785 11.1785 11.4583 10.8333 11.4583C10.4881 11.4583 10.2083 11.1785 10.2083 10.8333V9.16663C10.2083 8.82145 10.4881 8.54163 10.8333 8.54163Z"/>
+                 </svg>
+               </span>
+               <!-- write -->
+               Gerar convite
+             </button>
+            </div>
 
-              </div>
-           </fieldset>
          </form>
-
-        <!-- information .about -->
-         <div id="information" class="about">
-            <img src="./assets/icons/contact.svg" alt="Ícone de contato.">
-            <span> Dados para contato </span>
-         </div>
-
-        <!-- THIRTY - Contact -->
-        <form method="post" enctype="multipart/form-data">
-          <fieldset id="contact">
-            <!-- name -->
-            <div id="name" class="input">
-              <label for="fullname"> Nome </label>
-              <input type="text" id="fullname" name="fullname" placeholder="Nome completo" required>
-            </div>
-
-            <!-- mail & phone -->
-             <div id="mail-phone">
-              <!-- email -->
-              <div id="email" class="input">
-                <label for="mail"> E-mail </label>
-                <input type="email" id="mail" name="mail" placeholder="exemplo@email.com" required>
-              </div>
-              <!-- tel -->
-              <div id="tel" class="input">
-                <label for="phone"> Telefone </label>
-                <input type="tel" id="phone" name="phone" placeholder="(99)99999-9999">
-              </div>
-             </div>
-          </fieldset>
-        </form>
-
-        <!-- line -->
-        <div class="line"></div>
-
-        <!-- TERMS -->
-         <form method="post" enctype="multipart/form-data">
-          <!-- terms -->
-          <fieldset id="terms">
-            <!-- 1 -->
-            <div id="first" class="check">
-              <!-- One -->
-              <label>
-                <input type="checkbox" id="checkone">
-                <span class="icon">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6868 3.64645C13.8821 3.84171 13.8821 4.15829 13.6868 4.35355L6.35351 11.6869C6.15825 11.8821 5.84167 11.8821 5.64641 11.6869L2.31307 8.35355C2.11781 8.15829 2.11781 7.84171 2.31307 7.64645C2.50833 7.45118 2.82492 7.45118 3.02018 7.64645L5.99996 10.6262L12.9797 3.64645C13.175 3.45118 13.4916 3.45118 13.6868 3.64645Z"/>
-                  </svg>
-                </span>
-              </label>
-              <!-- write -->
-              <p> Li e concordo com os <a href="#"> Termos e Condições </a> e com a <a href="#"> Política de Privacidade </a>
-              </p>
-            </div>
-
-            <!-- 2 -->
-            <div id="second" class="check">
-              <!-- Two -->
-               <label>
-                <input type="checkbox" id="checktwo">
-                <span class="icon">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6868 3.64645C13.8821 3.84171 13.8821 4.15829 13.6868 4.35355L6.35351 11.6869C6.15825 11.8821 5.84167 11.8821 5.64641 11.6869L2.31307 8.35355C2.11781 8.15829 2.11781 7.84171 2.31307 7.64645C2.50833 7.45118 2.82492 7.45118 3.02018 7.64645L5.99996 10.6262L12.9797 3.64645C13.175 3.45118 13.4916 3.45118 13.6868 3.64645Z"/>
-                  </svg>
-                </span>
-              </label>
-              <!-- write -->
-              <p> Aceito receber atualizações e promoções por e-mail </p>
-            </div>
-
-            <!-- 3 -->
-            <div id="thirty" class="check">
-              <!-- Three -->
-               <label>
-                <input type="checkbox" id="checkthree">
-                <span class="icon">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6868 3.64645C13.8821 3.84171 13.8821 4.15829 13.6868 4.35355L6.35351 11.6869C6.15825 11.8821 5.84167 11.8821 5.64641 11.6869L2.31307 8.35355C2.11781 8.15829 2.11781 7.84171 2.31307 7.64645C2.50833 7.45118 2.82492 7.45118 3.02018 7.64645L5.99996 10.6262L12.9797 3.64645C13.175 3.45118 13.4916 3.45118 13.6868 3.64645Z"/>
-                  </svg>
-                </span>
-              </label>
-              <!-- write -->
-              <p> Aceito receber atualizações e promoções por SMS </p>
-            </div>
-
-            <!-- Submit -->
-             <div id="submit" class="button">
-              <button>
-                <!-- svg -->
-                <span class="ticket">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.71284 4.21284C2.14261 3.78307 2.7255 3.54163 3.33329 3.54163H16.6666C17.2744 3.54163 17.8573 3.78307 18.2871 4.21284C18.7168 4.64261 18.9583 5.2255 18.9583 5.83329V7.49996C18.9583 7.84514 18.6785 8.12496 18.3333 8.12496C17.836 8.12496 17.3591 8.3225 17.0075 8.67413C16.6558 9.02576 16.4583 9.50268 16.4583 9.99996C16.4583 10.4972 16.6558 10.9742 17.0075 11.3258C17.3591 11.6774 17.836 11.875 18.3333 11.875C18.6785 11.875 18.9583 12.1548 18.9583 12.5V14.1666C18.9583 14.7744 18.7168 15.3573 18.2871 15.7871C17.8573 16.2168 17.2744 16.4583 16.6666 16.4583H3.33329C2.7255 16.4583 2.14261 16.2168 1.71284 15.7871C1.28307 15.3573 1.04163 14.7744 1.04163 14.1666V12.5C1.04163 12.1548 1.32145 11.875 1.66663 11.875C2.16391 11.875 2.64082 11.6774 2.99245 11.3258C3.34408 10.9742 3.54163 10.4972 3.54163 9.99996C3.54163 9.50268 3.34408 9.02576 2.99245 8.67413C2.64082 8.3225 2.16391 8.12496 1.66663 8.12496C1.32145 8.12496 1.04163 7.84514 1.04163 7.49996V5.83329C1.04163 5.2255 1.28307 4.64261 1.71284 4.21284ZM11.4583 15.2083V14.1666C11.4583 13.8214 11.1785 13.5416 10.8333 13.5416C10.4881 13.5416 10.2083 13.8214 10.2083 14.1666V15.2083H3.33329C3.05703 15.2083 2.79207 15.0985 2.59672 14.9032C2.40137 14.7078 2.29163 14.4429 2.29163 14.1666V13.0618C2.88753 12.9402 3.43985 12.6462 3.87633 12.2097C4.46239 11.6236 4.79163 10.8288 4.79163 9.99996C4.79163 9.17116 4.46239 8.3763 3.87633 7.79025C3.43985 7.35376 2.88753 7.05973 2.29163 6.93808V5.83329C2.29163 5.55703 2.40137 5.29207 2.59672 5.09672C2.79207 4.90137 3.05703 4.79163 3.33329 4.79163H10.2083V5.83329C10.2083 6.17847 10.4881 6.45829 10.8333 6.45829C11.1785 6.45829 11.4583 6.17847 11.4583 5.83329V4.79163H16.6666C16.9429 4.79163 17.2078 4.90137 17.4032 5.09672C17.5985 5.29207 17.7083 5.55703 17.7083 5.83329V6.93808C17.1124 7.05973 16.5601 7.35376 16.1236 7.79025C15.5375 8.3763 15.2083 9.17116 15.2083 9.99996C15.2083 10.8288 15.5375 11.6236 16.1236 12.2097C16.5601 12.6462 17.1124 12.9402 17.7083 13.0618V14.1666C17.7083 14.4429 17.5985 14.7078 17.4032 14.9032C17.2078 15.0985 16.9429 15.2083 16.6666 15.2083H11.4583ZM10.8333 8.54163C11.1785 8.54163 11.4583 8.82145 11.4583 9.16663V10.8333C11.4583 11.1785 11.1785 11.4583 10.8333 11.4583C10.4881 11.4583 10.2083 11.1785 10.2083 10.8333V9.16663C10.2083 8.82145 10.4881 8.54163 10.8333 8.54163Z"/>
-                  </svg>
-                </span>
-                <!-- write -->
-                Gerar convite
-              </button>
-             </div>
-
-          </fieldset>
-         </form>
-
+        <!-- ... -->
       </main>
     </div>
     <script src="./scripts.js"></script>

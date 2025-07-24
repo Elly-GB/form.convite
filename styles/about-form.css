@@ -90,6 +90,7 @@ fieldset#about {
       border-radius: 8px;
 
       font: var(--b-md);
+      transition: 0.3s;
 
       &:focus,
       &:hover {
@@ -120,6 +121,8 @@ fieldset#about {
   
     font: var(--b-md);
     color: var(--text-body);
+
+    transition: all 0.3s;
     
     &:focus,
     &:hover {
@@ -133,9 +136,11 @@ fieldset#about {
 /* Placeholder */
 input:hover::placeholder {
   color: var(--text-heading);
+  transition: 0.3s;
 }
 input:focus::placeholder {
   color: var(--text-heading);
+  transition: 0.3s;
 }
 
 /* Input - Date */
@@ -158,6 +163,8 @@ input:focus::placeholder {
     font: var(--b-md);
     color: var(--input-placeholder);
     text-transform: uppercase;
+
+    transition: 0.3s;
     
     &:focus,
     &:hover {

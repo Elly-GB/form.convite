@@ -37,6 +37,8 @@ fieldset#custom {
       border-radius: 999px;
       border: 6px solid var(--shape-button);
 
+      transition: 0.3s;
+
       &:hover {
         border:6px solid var(--shape-hover);
       }

@@ -82,10 +82,17 @@ fieldset#custom {
       border-radius: 8px;
 
       padding: 4px 4px 8px 4px;
+      cursor: pointer;
+
+      transition: 0.3s;
 
       & img {
         margin-bottom: 8px;
         border-radius: 8px;
+      }
+
+      &:hover {
+        background-color: var(--shape-hover);
       }
     }
  

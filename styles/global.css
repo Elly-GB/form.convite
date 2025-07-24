@@ -50,7 +50,9 @@
 
 body {
   background-color: var(--shape-background);
+  
   font: var(--b-sm);
   color: var(--text-heading);
+
   overflow: hidden;
 }

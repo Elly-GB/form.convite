@@ -29,12 +29,17 @@ fieldset#custom {
 
     & label {
       display: inline-block;
+      cursor: pointer;
 
       width: 38px;
       height: 38px;
+      
       border-radius: 999px;
-
       border: 6px solid var(--shape-button);
+
+      &:hover {
+        border:6px solid var(--shape-hover);
+      }
     }
   }
 }
@@ -122,8 +127,9 @@ fieldset#custom {
 
   cursor: pointer;
   transition: 0.3s;
-
 }
+
+/* Toggle */
 
 #toggle input[type="checkbox"]::before {
   content: "";
@@ -140,6 +146,7 @@ fieldset#custom {
 
   transition: 0.3s;
 }
+
 
 #toggle input[type="checkbox"]::after {
   content: "Escuro";

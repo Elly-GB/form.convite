@@ -60,6 +60,11 @@ fieldset#terms {
    
   }
 
+  label.checked {
+    border-color: var(--brand-light);
+    
+  }
+
   /* label.first:has(input[type="checkbox"]:checked) {
     border: 1px solid var(--brand-light);
   } */

@@ -184,6 +184,7 @@ input::-webkit-calendar-picker-indicator {
 
   cursor: pointer;
 
+
   & span.icon {
           
     & svg {
@@ -238,5 +239,3 @@ textarea:hover::placeholder {
 textarea:focus::placeholder {
   color: var(--text-heading);
 }
-
-

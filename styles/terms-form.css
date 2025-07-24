@@ -82,3 +82,42 @@ fieldset#terms {
 
 }
 
+.button {
+  display: flex;
+  justify-content: end;
+
+  & button {
+    display: flex;
+    gap: 12px;
+
+    padding: 13px 20px;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--brand-dark);
+    border-radius: 8px;
+    border: none;
+
+    font: var(--b-md);
+    color: var(--text-heading);
+
+    cursor: pointer;
+
+    .ticket {
+      & svg {
+        display: flex;
+        align-items: center;
+
+        fill: var(--text-heading);
+  
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &:hover {
+      background-color: var(--brand-mid);
+    }
+  }
+}

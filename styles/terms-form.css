@@ -2,6 +2,8 @@ fieldset#terms {
   display: flex;
   flex-direction: column;
 
+  gap: 10px;
+
   border: none;
   margin-top: 40px;
 
@@ -15,7 +17,10 @@ fieldset#terms {
 }
 
 
-.first {
+.check {
+  display: flex;
+  gap: 12px;
+
   label {
     display: inline-flex;
     background-color: var(--input-base);
@@ -62,11 +67,6 @@ fieldset#terms {
 
   label.checked {
     border-color: var(--brand-light);
-    
   }
-
-  /* label.first:has(input[type="checkbox"]:checked) {
-    border: 1px solid var(--brand-light);
-  } */
 
 }

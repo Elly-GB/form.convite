@@ -1,4 +1,4 @@
-<h1 align="center"> Formulário de Matrícula - Made by: Gabrielly </h1>
+<h1 align="center"> Formulário de Convite - Made by: Gabrielly </h1>
 
 <h3 align="center"> Site para Desktop • Front </h3>
 

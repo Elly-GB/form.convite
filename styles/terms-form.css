@@ -2,24 +2,32 @@ fieldset#terms {
   display: flex;
   flex-direction: column;
 
-  gap: 10px;
+  gap: 12px;
 
   border: none;
   margin-top: 40px;
+  margin-bottom: 48px;
 
   input[type="checkbox"] {
     display: none;
   }
-
-  /* input[type="checkbox"]:checked + .icon {
-    opacity: 100%;
-  } */
 }
 
 
 .check {
   display: flex;
   gap: 12px;
+
+  & p {
+    font: var(--b-sm);
+    color: var(--text-body);
+
+    & a {
+      color: var(--brand-light);
+      font-weight: 600;
+      
+    }
+  }
 
   label {
     display: inline-flex;
@@ -70,3 +78,4 @@ fieldset#terms {
   }
 
 }
+
